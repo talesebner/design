@@ -76,13 +76,27 @@
 
 	const modal = document.querySelector('[data-lightbox-modal]');
 	if (modal) {
+		const safeAssetUrl = (value) => {
+			try {
+				const parsed = new URL(value, window.location.href);
+				if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+					return parsed.href;
+				}
+			} catch (_error) {
+				return '';
+			}
+			return '';
+		};
 		const modalImage = modal.querySelector('[data-lightbox-image]');
 		const modalTitle = modal.querySelector('[data-lightbox-title]');
 		const closeButton = modal.querySelector('[data-lightbox-close]');
 		document.querySelectorAll('[data-lightbox]').forEach((item) => {
 			item.addEventListener('click', () => {
-				const image = item.getAttribute('data-image') || item.querySelector('img')?.src || '';
+				const image = safeAssetUrl(item.getAttribute('data-image') || item.querySelector('img')?.src || '');
 				const title = item.getAttribute('data-title') || item.querySelector('h2, h3')?.textContent || '';
+				if (!image) {
+					return;
+				}
 				if (modalImage) {
 					modalImage.src = image;
 					modalImage.alt = title;
