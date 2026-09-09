@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio | Tales Ebner Design</title>
+	<meta name="description" content="Portfolio projects by Tales Ebner focused on scalable product systems and measurable outcomes.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script defer src="script.js"></script>
+</head>
+<body>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+	<header class="site-header" data-nav>
+		<div class="container nav-wrap">
+			<a class="brand" href="index.html">Tales Ebner Design</a>
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-menu-toggle>
+				<span></span><span></span><span></span>
+			</button>
+			<nav id="site-nav" class="site-nav" aria-label="Primary">
+				<a href="index.html#about">About</a>
+				<a href="portfolio.html" aria-current="page">Portfolio</a>
+				<a href="learn-more.html">Learn More</a>
+				<a href="project.html">Project Template</a>
+				<a href="index.html#contact">Contact</a>
+			</nav>
+			<button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>Theme</button>
+		</div>
+	</header>
+	<main id="main-content" class="section top-space">
+		<div class="container">
+			<h1 class="reveal">Portfolio</h1>
+			<p class="narrow reveal">A curated set of projects where systems thinking, service design, and interaction design delivered scalable impact.</p>
+			<div class="masonry reveal">
+				<article class="card"><a href="project.html"><img src="https://picsum.photos/600/760?random=21" alt="Case study preview of product platform foundations" loading="lazy"><h2>Platform Foundations</h2><p>Unified product architecture and flows for multi-team shipping.</p></a></article>
+				<article class="card"><a href="project.html"><img src="https://picsum.photos/600/490?random=22" alt="Case study preview of internal tools modernization" loading="lazy"><h2>Internal Tools Modernization</h2><p>Reduced operation load with better system clarity.</p></a></article>
+				<article class="card"><a href="project.html"><img src="https://picsum.photos/600/690?random=23" alt="Case study preview for customer onboarding ecosystem" loading="lazy"><h2>Onboarding Ecosystem</h2><p>Reframed first-run journeys across channels and teams.</p></a></article>
+				<article class="card"><a href="project.html"><img src="https://picsum.photos/600/460?random=24" alt="Case study preview for analytics-informed UX uplift" loading="lazy"><h2>Analytics-Led UX Uplift</h2><p>Linked design decisions to measurable product outcomes.</p></a></article>
+				<article class="card"><a href="project.html"><img src="https://picsum.photos/600/860?random=25" alt="Case study preview for API lifecycle orchestration" loading="lazy"><h2>API Lifecycle Experience</h2><p>Clarified API workflows for designers and developers.</p></a></article>
+				<article class="card"><a href="project.html"><img src="https://picsum.photos/600/540?random=26" alt="Case study preview of team scaling playbook" loading="lazy"><h2>Team Scaling Playbook</h2><p>Introduced operating models that improved release rhythm.</p></a></article>
+			</div>
+		</div>
+	</main>
+	<footer class="site-footer compact-footer">
+		<div class="container footer-grid">
+			<div><h2>Tales Ebner Design</h2></div>
+			<div><h3>Social</h3><ul class="social-list"><li><a aria-label="LinkedIn" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">in</a></li><li><a aria-label="GitHub" href="https://github.com" target="_blank" rel="noopener noreferrer">gh</a></li></ul></div>
+			<div><h3>Email</h3><a href="mailto:hello@talesebner.com">hello@talesebner.com</a></div>
+		</div>
+		<p class="copyright">© <span data-year></span> Tales Ebner Design</p>
+	</footer>
+	<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden data-lightbox-modal>
+		<button class="lightbox-close" type="button" aria-label="Close image preview" data-lightbox-close>×</button>
+		<img src="" alt="" data-lightbox-image>
+		<p data-lightbox-title></p>
+	</div>
+</body>
+</html>
